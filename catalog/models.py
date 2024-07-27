@@ -36,9 +36,6 @@ class Product(models.Model):
         blank=True,
         related_name="products",
     )
-    manufactured_at = models.DateField(
-        null=True, blank=True, verbose_name="Дата производства продукта"
-    )
 
     class Meta:
         verbose_name = "Товар"
