@@ -6,4 +6,4 @@ from catalog.models import Product
 def home(request):
     products = Product.objects.all()
     context = {"product_list": products}
-    return render(request, 'catalog/home.html', context)
+    return render(request, 'catalog/product_list.html', context)
