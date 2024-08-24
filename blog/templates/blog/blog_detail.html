@@ -9,11 +9,10 @@
                     <h4 class="my-0 font-weight-normal">{{ object.title }} </h4>
                 </div>
                 <div class="card-body">
-                    <img class="card-img-top" src="{{ blog.image | media_filter }}">
                     <p class="card-text"> Ссылка: {{ object.slug }}</p>
                     <p class="card-text">Содержимое: {{ object.content }}</p>
                     <p class="card-text">Дата создания: {{ object.created_at }}</p>
-                    <p class="card-text">Кол-во просмотров: {{ object.count_views }}</p>
+                    <p class="card-text">Кол-во просмотров: {{ object.views_count }}</p>
                     <a class="btn btn-primary" href="{% url 'blog:list' %}" role="button">Назад</a>
                 </div>
             </div>
