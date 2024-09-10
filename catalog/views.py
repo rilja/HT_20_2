@@ -28,6 +28,6 @@ class ProductCreateView(CreateView):
         return super().form_valid(form)
 
 
-# class ProductDeleteView(DeleteView):
-#     model = Product
-#     success_url = reverse_lazy('product:list')
+class ProductDeleteView(DeleteView):
+    model = Product
+    success_url = reverse_lazy('products:catalog_home')
